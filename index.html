@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+        <div class="sub-container">
+            <div class="budget-box">
+                <h2>Budget</h2>
+                <p class="error-msg hidden">Value cannot be empty or negative</p>
+                <input type="number" placeholder="Enter Total Amount" id="budget-input">
+                <button id="budget-btn">Set Budget</button>
+            </div>
+            <div class="expense-box">
+                <h2>Expenses</h2>
+                <p class="error-value hidden">Input cannot be empty or negative</p>
+                <input type="text" placeholder="Enter Expense" id="expense-input">
+                <input type="number" placeholder="Enter Cost of Product" id="cost-input">
+                <button id="check-btn">Check Amount</button>
+            </div>
+        </div>
+
+        <div class="balance-container">
+            <div class="show-container">
+                <p>Total Budget</p>
+                <span id="total-budget">0</span>
+            </div>
+            <div class="show-container">
+                <p>Expenses</p>
+                <span id="total-expense">0</span>
+            </div>
+            <div class="show-container">
+                <p>Balance</p>
+                <span id="balance">0</span>
+            </div>
+        </div>
+
+        <div class="expense-list-container">
+            <h2>Expense List</h2>
+            <div class="expense-list"></div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

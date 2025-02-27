@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #c5c3c3;
+}
+
+.wrapper{
+    width:90%;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.container{
+    width:100%;
+}
+
+.sub-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3em;
+}
+
+.error-msg,.error-value{
+    color:#ff0000;
+}
+
+.hidden{
+    display: none;
+}
+
+.container input{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 6px;
+    border: 1.5px solid #808080;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.container input:focus{
+    border-color: #029a02;
+}
+
+.budget-box , .expense-box{
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.budget-box h2 , .expense-box h2{
+    margin-bottom: 20px;
+}
+
+.sub-container button{
+    margin-block: 20px;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    background-color: #029a02;
+    color:#ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#06c206 ;
+}
+
+.balance-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    background-color:#029a02;
+    color:#ffffff;
+    margin-block: 30px;
+    border-radius: 5px;
+}
+
+.show-container{
+    text-align: center;
+}
+
+.show-container p{
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.expense-list-container {
+    width: 100%;
+    padding:20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px;
+    background-color: #ffffff;
+    font-size: 18pxpx;
+}
+
+.expenses-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: 5px solid #029a02;
+    margin-block: 10px;
+}
+
+#product{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+}
+.icon-container button{
+    background: transparent;
+    color:#029a02;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-container .fa-pen-to-square{
+    margin-right: 50px;
+}
+
+@media screen and (max-width:500px) {
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+        gap:2em;
+    }
+}
